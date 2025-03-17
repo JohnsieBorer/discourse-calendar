@@ -17,6 +17,8 @@ class RRuleConfigurator
       end
 
       "FREQ=MONTHLY;BYDAY=#{count}#{weekday.upcase[0, 2]}"
+    when "every_year"
+      "FREQ=YEARLY;BYMONTH=#{localized_start.month};BYMONTHDAY=#{localized_start.day}"
     when "every_weekday"
       "FREQ=DAILY;BYDAY=MO,TU,WE,TH,FR"
     when "every_two_weeks"
@@ -33,6 +35,8 @@ class RRuleConfigurator
     return 1 if !max_years
     per_year =
       case recurrence_type
+      when "every_year"
+        1
       when "every_month"
         12
       when "every_four_weeks"

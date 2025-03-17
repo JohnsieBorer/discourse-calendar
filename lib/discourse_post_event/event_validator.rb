@@ -3,6 +3,7 @@
 module DiscoursePostEvent
   class EventValidator
     VALID_RECURRENCES = %w[
+      every_year
       every_month
       every_week
       every_two_weeks

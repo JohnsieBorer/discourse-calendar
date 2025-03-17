@@ -455,6 +455,7 @@ zh_CN:
           every_week: "每周的这个工作日"
           every_two_weeks: "每两周的这个工作日"
           every_four_weeks: "每四周的这个工作日"
+          every_year: "每年的这天"
         minimal:
           label: "最低限度活动"
           checkbox_label: "隐藏“参加/不参加”按钮和受邀者状态"

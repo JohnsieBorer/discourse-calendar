@@ -118,6 +118,12 @@ export default class PostEventBuilder extends Component {
           "discourse_post_event.builder_modal.recurrence.every_four_weeks"
         ),
       },
+      {
+        id: "every_year",
+        name: i18n(
+            "discourse_post_event.builder_modal.recurrence.every_year"
+        ),
+      },
     ];
   }
 
